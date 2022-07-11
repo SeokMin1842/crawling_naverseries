@@ -14,9 +14,9 @@ def getRecommendation(cosin_sim):
     recMovieList = df_reviews.iloc[movieIdx, 0]
     return recMovieList
 
-df_reviews = pd.read_csv('./crawling_data/reviews_2017_2022.csv')
-Tfidf_matrix = mmread('./models/Tfidf_movie_review.mtx').tocsr()
-with open('./models/tfidf.pickle', 'rb') as f:
+df_reviews = pd.read_csv('./crawling_data/')
+Tfidf_matrix = mmread('./models/').tocsr()
+with open('./models/', 'rb') as f:
     Tfidf = pickle.load(f)
 
 okt = Okt()
